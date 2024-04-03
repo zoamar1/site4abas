@@ -1,0 +1,46 @@
+:root{
+    --bg-principal: #222831;
+    --text: #EEEEEE;
+    --bg-color: #393E46;
+    --txt-color: #EEEEEE;
+}
+
+.sidebar{
+    background-color: var(--bg-principal);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+}
+
+.pagesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.logo{
+    border-radius: 100%;
+}
+
+.item{
+    min-width: 170px;
+}
+
+.item a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 200ms;
+}
+
+.item a:hover{
+    color: greenyellow;
+    opacity: 1;
+    transition: all 200ms;
+}
