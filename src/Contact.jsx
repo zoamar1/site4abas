@@ -1,5 +1,3 @@
-
-
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
@@ -65,7 +63,7 @@ export const Contact = () => {
             </MapContainer>
             </div>
                     <div className={style.whatsapp}>
-                    <h2 className={style.whatsappTitle}>Nos envie uma mensagem</h2>
+                    <h2 className={style.whatsappTitle}>Nos envie uma mensagem!</h2>
                         <div className={style.container}>
                             <label htmlFor="name" className={style.label}>Nome</label>
                             <input className={style.input} type="text" id='name' name='name' value={formData.name} onChange={handleChange} required/>

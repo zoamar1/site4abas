@@ -18,7 +18,7 @@ export const RickAndMorty = () => {
             setData(response.data.results)
         }).catch((error) => {
             if (error.response.status === 404) {
-                console.log("Nao tem esse personagem")
+                console.log("Não encontramos este personagem")
             }
             console.error(error)
         })

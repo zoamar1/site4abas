@@ -21,41 +21,40 @@ export const Media = () => {
     return (
         <>
 
-            <SideBar/>
+            <SideBar />
             <main className={style.wrapMedia}>
-                <h1>Média</h1>
+                <div>
+                    <h1>Média</h1>
+                    <div className={style.inputContainer}>
+                        <div className={style.number}>
+                            <label htmlFor="n1">Numero 1</label>
+                            <input id="n1" placeholder="Digite o numero 1" onChange={e => setN1(e.target.value)}></input>
+                        </div>
+                        <div className={style.number}>
+                            <label htmlFor="n2">Numero 2</label>
+                            <input id="n2" placeholder="Digite o numero 2" onChange={e => setN2(e.target.value)}></input>
+                        </div>
+                        <div className={style.number}>
+                            <label htmlFor="n3">Numero 3</label>
+                            <input id="n3" placeholder="Digite o numero 3" onChange={e => setN3(e.target.value)}></input>
+                        </div>
+                        <div className={style.number}>
+                            <label htmlFor="n4">Numero 4</label>
+                            <input id="n4" placeholder="Digite o numero 4" onChange={e => setN4(e.target.value)}></input>
+                        </div>
+                        <div className={style.number}>
+                            <label htmlFor="n5">Numero 5</label>
+                            <input id="n5" placeholder="Digite o numero 5" onChange={e => setN5(e.target.value)}></input>
+                        </div>
 
-            <div className={style.inputContainer}>
-                <div className={style.number}>
-                    <label htmlFor="n1">Numero 1</label>
-                    <input id="n1" placeholder="Digite o numero 1" onChange={e => setN1(e.target.value)}></input>
+                    </div>
                 </div>
-                <div className={style.number}>
-                    <label htmlFor="n2">Numero 2</label>
-                    <input id="n2" placeholder="Digite o numero 2" onChange={e => setN2(e.target.value)}></input>
+                <div className={style.media}>
+                    <h2>Resultado</h2>
+                    {!isNaN(media) && <p>{media}</p>}
                 </div>
-                <div className={style.number}>
-                    <label htmlFor="n3">Numero 3</label>
-                    <input id="n3" placeholder="Digite o numero 3" onChange={e => setN3(e.target.value)}></input>
-                </div>
-                <div className={style.number}>
-                    <label htmlFor="n4">Numero 4</label>
-                    <input id="n4" placeholder="Digite o numero 4" onChange={e => setN4(e.target.value)}></input>
-                </div>
-                <div className={style.number}>
-                    <label htmlFor="n5">Numero 5</label>
-                    <input id="n5" placeholder="Digite o numero 5" onChange={e => setN5(e.target.value)}></input>
-                </div>
-                
-            </div>
-            <div className={style.media}>
-                    <h2>Media</h2>
-                {   !isNaN(media) && <p>{media}</p>}
-                </div>
-                
-                
             </main>
-            
+
         </>
     )
 }
